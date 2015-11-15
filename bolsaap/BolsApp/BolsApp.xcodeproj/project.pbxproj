@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C02909D1BF8E82F005221DB /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C02909B1BF8E82F005221DB /* DataManager.swift */; };
+		8C02909E1BF8E82F005221DB /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C02909C1BF8E82F005221DB /* SwiftyJSON.swift */; };
+		8C0290A21BF8F372005221DB /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0290A01BF8F372005221DB /* WebViewController.swift */; };
+		8C0290A31BF8F372005221DB /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C0290A11BF8F372005221DB /* WebViewController.xib */; };
+		8C2E1EF41BF90D8600D75651 /* StockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2E1EF31BF90D8600D75651 /* StockCell.swift */; };
+		8C2E1EF61BF90D9700D75651 /* StockCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C2E1EF51BF90D9700D75651 /* StockCell.xib */; };
+		8C59DCD01BF7CF7B000B219F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C59DCCF1BF7CF7B000B219F /* AppDelegate.swift */; };
+		8C59DCD21BF7CF7B000B219F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C59DCD11BF7CF7B000B219F /* ViewController.swift */; };
+		8C59DCD71BF7CF7B000B219F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C59DCD61BF7CF7B000B219F /* Assets.xcassets */; };
+		8C59DCDA1BF7CF7B000B219F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C59DCD81BF7CF7B000B219F /* LaunchScreen.storyboard */; };
+		8C59DCE51BF7CF7C000B219F /* BolsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C59DCE41BF7CF7C000B219F /* BolsAppUITests.swift */; };
+		8C7D2ECB1BF7D57C00E73840 /* AllStocksController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C7D2ECA1BF7D57C00E73840 /* AllStocksController.xib */; };
+		8C7D2ECD1BF7D5AB00E73840 /* AllStocksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7D2ECC1BF7D5AB00E73840 /* AllStocksController.swift */; };
+		8C7D2ED01BF7E0E300E73840 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C7D2ECE1BF7E0E300E73840 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8C59DCE11BF7CF7C000B219F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C59DCC41BF7CF7B000B219F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C59DCCB1BF7CF7B000B219F;
+			remoteInfo = BolsApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8C02909B1BF8E82F005221DB /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		8C02909C1BF8E82F005221DB /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		8C0290A01BF8F372005221DB /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		8C0290A11BF8F372005221DB /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
+		8C2E1EF31BF90D8600D75651 /* StockCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockCell.swift; sourceTree = "<group>"; };
+		8C2E1EF51BF90D9700D75651 /* StockCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StockCell.xib; sourceTree = "<group>"; };
+		8C59DCCC1BF7CF7B000B219F /* BolsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BolsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C59DCCF1BF7CF7B000B219F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8C59DCD11BF7CF7B000B219F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8C59DCD61BF7CF7B000B219F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C59DCD91BF7CF7B000B219F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8C59DCDB1BF7CF7B000B219F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C59DCE01BF7CF7C000B219F /* BolsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BolsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C59DCE41BF7CF7C000B219F /* BolsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BolsAppUITests.swift; sourceTree = "<group>"; };
+		8C59DCE61BF7CF7C000B219F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C7D2ECA1BF7D57C00E73840 /* AllStocksController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AllStocksController.xib; sourceTree = "<group>"; };
+		8C7D2ECC1BF7D5AB00E73840 /* AllStocksController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllStocksController.swift; sourceTree = "<group>"; };
+		8C7D2ECF1BF7E0E300E73840 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C59DCC91BF7CF7B000B219F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C59DCDD1BF7CF7C000B219F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C02909A1BF8E82F005221DB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8C02909B1BF8E82F005221DB /* DataManager.swift */,
+				8C02909C1BF8E82F005221DB /* SwiftyJSON.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8C02909F1BF8F372005221DB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8C0290A01BF8F372005221DB /* WebViewController.swift */,
+				8C0290A11BF8F372005221DB /* WebViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		8C59DCC31BF7CF7B000B219F = {
+			isa = PBXGroup;
+			children = (
+				8C59DCCE1BF7CF7B000B219F /* BolsApp */,
+				8C59DCE31BF7CF7C000B219F /* BolsAppUITests */,
+				8C59DCCD1BF7CF7B000B219F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8C59DCCD1BF7CF7B000B219F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C59DCCC1BF7CF7B000B219F /* BolsApp.app */,
+				8C59DCE01BF7CF7C000B219F /* BolsAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C59DCCE1BF7CF7B000B219F /* BolsApp */ = {
+			isa = PBXGroup;
+			children = (
+				8C7D2EC81BF7D4B300E73840 /* Screens */,
+				8C02909A1BF8E82F005221DB /* Utils */,
+				8C59DCCF1BF7CF7B000B219F /* AppDelegate.swift */,
+				8C59DCD11BF7CF7B000B219F /* ViewController.swift */,
+				8C59DCD61BF7CF7B000B219F /* Assets.xcassets */,
+				8C59DCD81BF7CF7B000B219F /* LaunchScreen.storyboard */,
+				8C7D2ECE1BF7E0E300E73840 /* Main.storyboard */,
+				8C59DCDB1BF7CF7B000B219F /* Info.plist */,
+			);
+			path = BolsApp;
+			sourceTree = "<group>";
+		};
+		8C59DCE31BF7CF7C000B219F /* BolsAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8C59DCE41BF7CF7C000B219F /* BolsAppUITests.swift */,
+				8C59DCE61BF7CF7C000B219F /* Info.plist */,
+			);
+			path = BolsAppUITests;
+			sourceTree = "<group>";
+		};
+		8C7D2EC81BF7D4B300E73840 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				8C7D2EC91BF7D55B00E73840 /* AllStocks */,
+				8C02909F1BF8F372005221DB /* Login */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		8C7D2EC91BF7D55B00E73840 /* AllStocks */ = {
+			isa = PBXGroup;
+			children = (
+				8C7D2ECA1BF7D57C00E73840 /* AllStocksController.xib */,
+				8C7D2ECC1BF7D5AB00E73840 /* AllStocksController.swift */,
+				8C2E1EF31BF90D8600D75651 /* StockCell.swift */,
+				8C2E1EF51BF90D9700D75651 /* StockCell.xib */,
+			);
+			path = AllStocks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C59DCCB1BF7CF7B000B219F /* BolsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C59DCE91BF7CF7C000B219F /* Build configuration list for PBXNativeTarget "BolsApp" */;
+			buildPhases = (
+				8C59DCC81BF7CF7B000B219F /* Sources */,
+				8C59DCC91BF7CF7B000B219F /* Frameworks */,
+				8C59DCCA1BF7CF7B000B219F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BolsApp;
+			productName = BolsApp;
+			productReference = 8C59DCCC1BF7CF7B000B219F /* BolsApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8C59DCDF1BF7CF7C000B219F /* BolsAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C59DCEC1BF7CF7C000B219F /* Build configuration list for PBXNativeTarget "BolsAppUITests" */;
+			buildPhases = (
+				8C59DCDC1BF7CF7C000B219F /* Sources */,
+				8C59DCDD1BF7CF7C000B219F /* Frameworks */,
+				8C59DCDE1BF7CF7C000B219F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C59DCE21BF7CF7C000B219F /* PBXTargetDependency */,
+			);
+			name = BolsAppUITests;
+			productName = BolsAppUITests;
+			productReference = 8C59DCE01BF7CF7C000B219F /* BolsAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C59DCC41BF7CF7B000B219F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Christopher Amato";
+				TargetAttributes = {
+					8C59DCCB1BF7CF7B000B219F = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = XQ942B8TAP;
+					};
+					8C59DCDF1BF7CF7C000B219F = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 8C59DCCB1BF7CF7B000B219F;
+					};
+				};
+			};
+			buildConfigurationList = 8C59DCC71BF7CF7B000B219F /* Build configuration list for PBXProject "BolsApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8C59DCC31BF7CF7B000B219F;
+			productRefGroup = 8C59DCCD1BF7CF7B000B219F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C59DCCB1BF7CF7B000B219F /* BolsApp */,
+				8C59DCDF1BF7CF7C000B219F /* BolsAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C59DCCA1BF7CF7B000B219F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C7D2ECB1BF7D57C00E73840 /* AllStocksController.xib in Resources */,
+				8C59DCDA1BF7CF7B000B219F /* LaunchScreen.storyboard in Resources */,
+				8C59DCD71BF7CF7B000B219F /* Assets.xcassets in Resources */,
+				8C0290A31BF8F372005221DB /* WebViewController.xib in Resources */,
+				8C2E1EF61BF90D9700D75651 /* StockCell.xib in Resources */,
+				8C7D2ED01BF7E0E300E73840 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C59DCDE1BF7CF7C000B219F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C59DCC81BF7CF7B000B219F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C7D2ECD1BF7D5AB00E73840 /* AllStocksController.swift in Sources */,
+				8C0290A21BF8F372005221DB /* WebViewController.swift in Sources */,
+				8C2E1EF41BF90D8600D75651 /* StockCell.swift in Sources */,
+				8C02909D1BF8E82F005221DB /* DataManager.swift in Sources */,
+				8C59DCD21BF7CF7B000B219F /* ViewController.swift in Sources */,
+				8C02909E1BF8E82F005221DB /* SwiftyJSON.swift in Sources */,
+				8C59DCD01BF7CF7B000B219F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C59DCDC1BF7CF7C000B219F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C59DCE51BF7CF7C000B219F /* BolsAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8C59DCE21BF7CF7C000B219F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C59DCCB1BF7CF7B000B219F /* BolsApp */;
+			targetProxy = 8C59DCE11BF7CF7C000B219F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8C59DCD81BF7CF7B000B219F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C59DCD91BF7CF7B000B219F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8C7D2ECE1BF7E0E300E73840 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C7D2ECF1BF7E0E300E73840 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8C59DCE71BF7CF7C000B219F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8C59DCE81BF7CF7C000B219F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C59DCEA1BF7CF7C000B219F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = BolsApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codegex.BolsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8C59DCEB1BF7CF7C000B219F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = BolsApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codegex.BolsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		8C59DCED1BF7CF7C000B219F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BolsAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codegex.BolsAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BolsApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		8C59DCEE1BF7CF7C000B219F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BolsAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codegex.BolsAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BolsApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C59DCC71BF7CF7B000B219F /* Build configuration list for PBXProject "BolsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C59DCE71BF7CF7C000B219F /* Debug */,
+				8C59DCE81BF7CF7C000B219F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C59DCE91BF7CF7C000B219F /* Build configuration list for PBXNativeTarget "BolsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C59DCEA1BF7CF7C000B219F /* Debug */,
+				8C59DCEB1BF7CF7C000B219F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C59DCEC1BF7CF7C000B219F /* Build configuration list for PBXNativeTarget "BolsAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C59DCED1BF7CF7C000B219F /* Debug */,
+				8C59DCEE1BF7CF7C000B219F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8C59DCC41BF7CF7B000B219F /* Project object */;
+}
