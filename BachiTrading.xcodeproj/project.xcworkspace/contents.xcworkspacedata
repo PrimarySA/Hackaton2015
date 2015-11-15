@@ -2,6 +2,24 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../Order.h">
+   </FileRef>
+   <FileRef
+      location = "group:../Order.m">
+   </FileRef>
+   <FileRef
+      location = "group:../BachiTrading/Market.h">
+   </FileRef>
+   <FileRef
+      location = "group:../BachiTrading/Market.m">
+   </FileRef>
+   <FileRef
+      location = "group:../BachiTrading/Tikcer.h">
+   </FileRef>
+   <FileRef
+      location = "group:../BachiTrading/Tikcer.m">
+   </FileRef>
+   <FileRef
       location = "self:BachiTrading.xcodeproj">
    </FileRef>
 </Workspace>

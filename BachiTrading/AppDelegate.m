@@ -7,6 +7,17 @@
 //
 
 #import "AppDelegate.h"
+#import "BachiTrading-Swift.h"
+
+
+#import "HistoricalDataStore.h"
+#import "Response.h"
+#import "InstrumentsResponse.h"
+#import "DateUtils.h"
+#import "MarketDataStore.h"
+#import "MarketDataResponse.h"
+#import "MMProgressHUD.h"
+
 
 @interface AppDelegate ()
 
@@ -16,7 +27,16 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [MMProgressHUD setPresentationStyle:MMProgressHUDPresentationStyleExpand];
+    self.window = [[UIWindow alloc] initWithFrame: [UIScreen mainScreen].bounds];
+    UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController: [[MarketDataViewController alloc] init]];
+    [navController.navigationBar setBarTintColor:[UIColor colorWithRed:63/255.0 green:180/255.0 blue:152/255.0 alpha:1]];
+    [navController.navigationBar setBarTintColor:[UIColor whiteColor]];
+
+    self.window.rootViewController = navController;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
