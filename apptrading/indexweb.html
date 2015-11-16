@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from sindevo.com/mobix/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 10 Oct 2015 16:40:58 GMT -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+<link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="apple-touch-startup-image-640x1096.html">
+<title>mobix - mobile web app template</title>
+<link rel="stylesheet" href="css/framework7.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/colors/magenta.css">
+<link type="text/css" rel="stylesheet" href="css/swipebox.css" />
+<link type="text/css" rel="stylesheet" href="css/animations.css" />
+
+	<link rel="stylesheet" media="screen" type="text/css" href="in/colorpicker.css" />
+	<link rel="stylesheet" charset="utf-8" type="text/css" href="in/demo.css"/>
+	
+	
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700,900' rel='stylesheet' type='text/css'>
+
+  <link href="jb/docs.min.css" rel="stylesheet">
+  <link href="jb/style.css" rel="stylesheet">
+
+ 
+
+<style>
+
+.query-builder .rules-group-container {
+padding: 10px 10px 6px;
+border: none  !important; 
+background: white !important;
+}
+
+.query-builder, .query-builder * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.query-builder {
+  font-family: sans-serif;
+}
+
+.query-builder .pull-right {
+  float: right !important;
+}
+
+.query-builder .btn {
+  text-transform: none;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.query-builder .btn.focus, .query-builder .btn:focus, .query-builder .btn:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.query-builder .btn.active, .query-builder .btn:active {
+  background-image: none;
+  outline: 0px none;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.125) inset;
+}
+
+
+.query-builder .btn-success {
+padding: 0 10px;
+border: 1px solid lightskyblue;
+background: none;
+border-radius: 5px;
+
+color: lightskyblue;
+
+  }
+
+.query-builder .btn-primary {
+  color: #FFF;
+  background-color: #337AB7;
+  border-color: #2E6DA4;
+}
+
+.query-builder .btn-danger {
+padding: 0 10px;
+border: 1px solid lightskyblue;
+background: none;
+border-radius: 5px;
+
+color: lightskyblue;
+
+}
+
+.query-builder .btn-success.active, .query-builder .btn-success.focus,
+.query-builder .btn-success:active, .query-builder .btn-success:focus,
+.query-builder .btn-success:hover {
+  color: #FFF;
+  background-color: #449D44;
+  border-color: #398439;
+}
+
+.query-builder .btn-primary.active, .query-builder .btn-primary.focus,
+.query-builder .btn-primary:active, .query-builder .btn-primary:focus,
+.query-builder .btn-primary:hover {
+  color: #FFF;
+  background-color: #286090;
+  border-color: #204D74;
+}
+
+.query-builder .btn-danger.active, .query-builder .btn-danger.focus,
+.query-builder .btn-danger:active, .query-builder .btn-danger:focus,
+.query-builder .btn-danger:hover {
+  color: #FFF;
+  background-color: #C9302C;
+  border-color: #AC2925;
+}
+
+.query-builder .btn-group {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.query-builder .btn-group > .btn {
+  position: relative;
+  float: left;
+}
+
+.query-builder .btn-group > .btn:first-child {
+  margin-left: 0px;
+}
+
+.query-builder .btn-group > .btn:first-child:not(:last-child) {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.query-builder .btn-group > .btn:last-child:not(:first-child) {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.query-builder .btn-group .btn + .btn, .query-builder .btn-group .btn + .btn-group,
+.query-builder .btn-group .btn-group + .btn, .query-builder .btn-group .btn-group + .btn-group {
+  margin-left: -1px;
+}
+
+.query-builder .btn-xs, .query-builder .btn-group-xs > .btn {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+
+/*
+.btn {
+border: 1px solid lightskyblue;
+color: lightskyblue;
+}
+.btn {
+text-decoration: none;
+text-align: center;
+display: block;
+border-radius: 5px;
+line-height: 38px;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+-webkit-appearance: none;
+-moz-appearance: none;
+-ms-appearance: none;
+appearance: none;
+background: none;
+padding: 0 10px;
+margin: 0;
+height: 40px;
+white-space: nowrap;
+position: relative;
+overflow: hidden;
+text-overflow: ellipsis;
+font-size: 14px;
+font-family: inherit;
+cursor: pointer;
+}
+*/
+
+.login-block {
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.login-block h1 {
+    text-align: center;
+    color: lightskyblue;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.login-block input {
+    width: 100%;
+    height: 42px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: Montserrat;
+    padding: 0 20px 0 50px;
+    outline: none;
+}
+
+.login-block input#username {
+    background: #fff url('images/u0XmBmv.png') 20px top no-repeat;
+    background-size: 16px 80px;
+}
+
+.login-block input#username:focus {
+    background: #fff url('images/u0XmBmv.png') 20px bottom no-repeat;
+    background-size: 16px 80px;
+}
+
+.login-block input#password {
+    background: #fff url('images/Qf83FTt.png') 20px top no-repeat;
+    background-size: 16px 80px;
+}
+
+.login-block input#password:focus {
+    background: #fff url('images/Qf83FTt.png') 20px bottom no-repeat;
+    background-size: 16px 80px;
+}
+
+.login-block input:active, .login-block input:focus {
+    border: 1px solid lightskyblue;
+}
+
+.login-block button {
+    width: 100%;
+    height: 40px;
+    background: lightskyblue;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid lightskyblue;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Montserrat;
+    outline: none;
+    cursor: pointer;
+}
+
+.login-block button:hover {
+    background: #ff7b81;
+}
+
+</style>
+
+
+</head>
+<body id="mobile_wrap">
+
+    <div class="statusbar-overlay"></div>
+
+    <div class="panel-overlay"></div>
+
+    <div class="panel panel-left panel-cover">
+          <div class="user_login_info">
+                <div class="user_thumb">
+                <img src="images/profile.jpg" alt="" title="" />
+                  <div class="user_details">
+                   <p>Hi, <span>John Doe</span></p>
+                  </div>  
+                  <div class="user_social">
+                  <a href="#" data-popup=".popup-social" class="open-popup"><img src="images/icons/white/twitter.png" alt="" title="" /></a>              </div>       
+                </div>
+
+                  <nav class="user-nav">
+                    <ul>
+                      <li><a href="features.html" class="close-panel"><img src="images/icons/white/settings.png" alt="" title="" /><span>Settings</span></a></li>
+                      <li><a href="features.html" class="close-panel"><img src="images/icons/white/briefcase.png" alt="" title="" /><span>Account</span></a></li>
+                      <li><a href="features.html" class="close-panel"><img src="images/icons/white/message.png" alt="" title="" /><span>Messages</span><strong class="green">12</strong></a></li>
+                      <li><a href="features.html" class="close-panel"><img src="images/icons/white/download.png" alt="" title="" /><span>Downloads</span><strong class="blue">5</strong></a></li>
+                      <li><a href="index-2.html" class="close-panel"><img src="images/icons/white/lock.png" alt="" title="" /><span>Logout</span></a></li>
+                    </ul>
+                  </nav>
+          </div>
+    </div>
+
+    <div class="panel panel-right panel-cover"> 
+      
+        <h2>Search</h2>
+        <div class="search_form">
+        <form id="SearchForm" method="post">
+        <input type="text" name="keyword" value="" class="search_input" placeholder="keyword" />
+        <input type="image" name="submit" class="search_submit" id="submit" src="images/icons/white/search.png" />
+        </form>
+        </div>
+        <div class="clear"></div>
+        <h3>POPULAR POSTS</h3>
+        <ul class="popular_posts">
+        <li>
+        <a href="blog-single.html" class="close-panel"><img src="images/photos/photo1.jpg" alt="" title="" /></a>
+        <span><a href="blog-single.html" class="close-panel">Design is not just what it looks like and feels like.</a></span>        </li>
+        <li>
+        <a href="blog-single.html" class="close-panel"><img src="images/photos/photo2.jpg" alt="" title="" /></a>
+        <span><a href="blog-single.html" class="close-panel">Fashion fades, only style remains the same.</a></span>        </li>
+        <li>
+        <a href="blog-single.html" class="close-panel"><img src="images/photos/photo3.jpg" alt="" title="" /></a>
+        <span><a href="blog-single.html" class="close-panel">Sed ut perspiciatis unde omnis iste accusantium.</a></span>        </li>
+        <li>
+        <a href="blog-single.html" class="close-panel"><img src="images/photos/photo4.jpg" alt="" title="" /></a>
+        <span><a href="blog-single.html" class="close-panel">Nemo enim ipsam voluptatem quia voluptas.</a></span>        </li>
+        <li>
+        <a href="blog-single.html" class="close-panel"><img src="images/photos/photo5.jpg" alt="" title="" /></a>
+        <span><a href="blog-single.html" class="close-panel">Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</a></span>        </li>
+        </ul>
+    </div>
+
+    <div class="views">
+
+      <div class="view view-main">
+
+        <div class="pages  toolbar-through">
+
+          <div data-page="index" class="page homepage" style="
+    background: lightskyblue;
+">
+            <div class="page-content">
+					<div class="logo"><img src="images/logo.png" alt="" title="" /></div> 
+            </div>
+          </div>
+        </div>
+        <!-- Bottom Toolbar-->
+        <div class="toolbar">
+              <div class="toolbar-inner">
+              <ul class="toolbar_icons">
+              <li><a href="tickers.html"  ><img src="images/icons/simbolosblanco.svg" alt="" title="" /></a></li>
+              <li><a href="balance.html"><img src="images/icons/balanceblanco.svg" alt="" title="" /></a></li>
+              <li class="menuicon"><a href="menu.html"><img src="images/icons/white/menu.png" alt="" title="" /></a></li>
+              <li><a href="comunidad.html"><img src="images/icons/comunidadblanco.svg" alt="" title="" /></a></li>
+              <li><a href="login.html"><img src="images/icons/loginblanco.svg" alt="" title="" /></a></li>
+              </ul>
+              </div>  
+        </div>
+      </div>
+    </div>
+    
+    <!-- Login Popup -->
+    <div class="popup popup-login">
+    <div class="content-block-login">
+      <h4>LOGIN</h4>
+      <div class="form_logo"><img src="images/logo.png" alt="" title="" /></div>
+            <div class="loginform">
+            <form id="LoginForm" method="post">
+            <input type="text" name="Username" value="" class="form_input required" placeholder="username" />
+            <input type="password" name="Password" value="" class="form_input required" placeholder="password" />
+            <div class="forgot_pass"><a href="#" data-popup=".popup-forgot" class="open-popup">Forgot Password?</a></div>
+            <input type="submit" name="submit" class="form_submit" id="submit" value="SIGN IN" />
+            </form>
+            <div class="signup_bottom">
+            <p>Don't have an account?</p>
+            <a href="#" data-popup=".popup-signup" class="open-popup">SIGN UP</a>            </div>
+            </div>
+      <div class="close_loginpopup_button"><a href="#" class="close-popup"><img src="images/icons/white/menu_close.png" alt="" title="" /></a></div>
+    </div>
+    </div>
+    
+    <!-- Register Popup -->
+    <div class="popup popup-signup">
+    <div class="content-block-login">
+      <h4>REGISTER</h4>
+      <div class="form_logo"><img src="images/logo.png" alt="" title="" /></div>
+            <div class="loginform">
+            <form id="RegisterForm" method="post">
+            <input type="text" name="Username" value="" class="form_input required" placeholder="username" />
+            <input type="text" name="Email" value="" class="form_input required" placeholder="email" />
+            <input type="password" name="Password" value="" class="form_input required" placeholder="password" />
+            <input type="submit" name="submit" class="form_submit" id="submit" value="SIGN UP" />
+            </form>
+            <div class="signup_social">
+            <a href="http://www.facebook.com/" class="signup_facebook external">FACEBOOK</a>
+            <a href="http://www.twitter.com/" class="signup_twitter external">TWITTER</a>            
+            </div>
+            </div>
+      <div class="close_loginpopup_button"><a href="#" class="close-popup"><img src="images/icons/white/menu_close.png" alt="" title="" /></a></div>
+    </div>
+    </div>
+    
+    <!-- Login Popup -->
+    <div class="popup popup-forgot">
+    <div class="content-block-login">
+      <h4>FORGOT PASSWORD</h4>
+      <div class="form_logo"><img src="images/logo.png" alt="" title="" /></div>
+            <div class="loginform">
+            <form id="ForgotForm" method="post">
+            <input type="text" name="Email" value="" class="form_input required" placeholder="email" />
+            <input type="submit" name="submit" class="form_submit" id="submit" value="RESEND PASSWORD" />
+            </form>
+            <div class="signup_bottom">
+            <p>Check your email and follow the instructions to reset your password.</p>
+            </div>
+            </div>
+      <div class="close_loginpopup_button"><a href="#" class="close-popup"><img src="images/icons/white/menu_close.png" alt="" title="" /></a></div>
+    </div>
+    </div>
+    
+    
+    <!-- Social Popup -->
+    <div class="popup popup-social">
+    <div class="content-block">
+      <h4>Follow Us</h4>
+      <p>Social icons solution that allows you share and increase your social popularity.</p>
+      <ul class="social_share">
+      <li><a href="http://twitter.com/" class="external"><img src="images/icons/white/twitter.png" alt="" title="" /></a></li>
+      <li><a href="http://www.facebook.com/" class="external"><img src="images/icons/white/facebook.png" alt="" title="" /></a></li>
+      <li><a href="http://plus.google.com/" class="external"><img src="images/icons/white/googleplus.png" alt="" title="" /></a></li>
+      <li><a href="http://www.dribbble.com/" class="external"><img src="images/icons/white/dribbble.png" alt="" title="" /></a></li>
+      <li><a href="http://www.linkedin.com/" class="external"><img src="images/icons/white/linkedin.png" alt="" title="" /></a></li>
+      <li><a href="http://www.pinterest.com/" class="external"><img src="images/icons/white/pinterest.png" alt="" title="" /></a></li>
+      </ul>
+      <div class="close_popup_button"><a href="#" class="close-popup"><img src="images/icons/white/menu_close.png" alt="" title="" /></a></div>
+    </div>
+    </div>
+    
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<script src="js/jquery.validate.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/framework7.js"></script>
+<script src="js/highstock.js"></script>
+<script src="js/exporting.js"></script>
+<script src="jb/technical-indicators.src.js"></script>
+
+<script type="text/javascript" src="js/my-app-web.js"></script>
+<script type="text/javascript" src="js/jquery.swipebox.js"></script>
+<script type="text/javascript" src="js/email.js"></script>
+
+ <script src="jb/bootstrap.min.js"></script>
+  <script src="jb/bootbox.min.js"></script>
+  <script src="jb/docs.min.js"></script>
+
+
+  
+  
+<link href="jb/bootstrap-datepicker3.min.css" rel="stylesheet">
+<link href="jb/bootstrap-slider.min.css" rel="stylesheet">
+<link href="jb/selectize.default.css" rel="stylesheet">
+<link href="jb/bootstrap-select.min.css" rel="stylesheet">
+<link href="jb/awesome-bootstrap-checkbox.css" rel="stylesheet">
+<link href="jb/query-builder.default.min.css" rel="stylesheet">
+
+<script src="jb/moment.min.js"></script>
+<script src="jb/bootstrap-datepicker.min.js"></script>
+<script src="jb/bootstrap-slider.min.js"></script>
+<script src="jb/selectize.min.js"></script>
+<script src="js/query-builder.standalone.min.js"></script>
+<script src="jb/bootstrap-select.min.js"></script>
+<script src="jb/sql-parser.js"></script>
+
+
+
+<script src="js/qrcode.min.js"></script>
+
+<script>var baseurl = 'http://querybuilder.js.org';</script>
+
+
+	
+
+  </body>
+
+<!-- Mirrored from sindevo.com/mobix/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 10 Oct 2015 16:41:29 GMT -->
+</html>
