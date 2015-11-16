@@ -1,0 +1,196 @@
+body {
+	font-size: 12px;
+	margin-top: 50px;
+}
+.page, #topnavbar {
+	display:none;
+}
+.muaker-draggable.ui-draggable-dragging {
+	font-size: 28px !important;
+	cursor: "copy"" !important;
+}
+
+.muaker-quote, .muaker-orders {
+	position: relative;
+}
+
+.muaker-orders div {
+	position: absolute;
+	width: 90%;
+	left: 5px;
+	border-radius: 4px;
+	padding-left: 4px;
+}
+
+.muaker-quote {
+	text-align: right;
+}
+
+.muaker-quote div {
+	position: absolute;
+	left: 0px;
+	padding-right: 4px;
+	border-radius: 4px;
+}
+
+.muaker-quote span {
+	margin-left: 4px;
+}
+
+.muaker-quote span.msize {
+	margin-left: 15px;
+}
+
+.muaker .mprice {
+	max-width: 90px;
+}
+
+.muaker .msize {
+	max-width: 50px;
+}
+
+.muaker .clone {
+	font-style: italic;
+	color: #fefefe;
+	z-index: 9999;
+}
+
+.muaker-orders .glyphicon {
+	margin-left: 4px;
+}
+
+.muaker-ask, .muaker-myask {
+	background-color: #DE5D4F;
+	color: #fefefe;
+}
+
+.muaker-ask-book, .muaker-myask.clone {
+	background-color: ##FE7D6F;
+	color: #fefefe;
+}
+
+.muaker-bid, .muaker-mybid {
+	background-color: #4A93F4;
+	color: #fefefe;
+}
+
+.muaker-bid-book, .muaker-mybid.clone {
+	background-color: #5Aa3FF;
+	color: #fefefe;
+}
+
+.muaker-bid, .muaker-ask {
+	z-index: 100;
+}
+
+.tt {
+	padding-top: 5px
+}
+
+.ttq, .tto {
+	position: relative;
+	height: 250px;
+	margin-left: -15px;
+}
+
+.chart {
+	margin-right: -15px;
+}
+
+.ttq .symbol {
+	font-size: 120%;
+}
+
+.ttq .quote, .tto .order {
+	position: absolute;
+	left: 0px;
+	padding: 2px 5px;
+	border-radius: 3px;
+	color: #fefefe;
+}
+
+.quote.bid, .order.bid {
+	background-color: #4A93F4;
+	top: 240px;
+}
+
+.bid.clone {
+	background-color: #5AA3FF;
+	font-style: italic;
+}
+
+.quote.offer, .order.offer {
+	background-color: #DE5D4F;
+	top: 10px;
+}
+
+.offer.clone {
+	a_background-color: #EE6D5F;
+	background-color: #bbb;
+	font-style: italic;
+}
+
+.up .change {
+	background-color: #2980b9;
+}
+
+.down .change {
+	background-color: #e74c3c;
+}
+
+.quote {
+	padding: 4px;
+	color: #000;
+	background-color: #eee;
+	border-radius:3px;
+}
+
+.change {
+	border-radius: 4px;
+}
+
+.last, .change {
+	text-align: right;
+}
+
+.template {
+	display: none;
+}
+
+.trader {
+	background-color: #444;
+}
+
+.trader .entry {
+	min-width: 70px;
+	border-radius: 4px;
+	position: absolute;
+	bottom: 1px;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+.bids, .offers {
+	position: relative;
+	min-height: 25px;
+}
+
+.bids .entry {
+	background-color: #2980b9;
+	text-align: right;
+	right: 2px;
+}
+
+.bids .badge {
+	margin-right: 5px;
+}
+
+.offers .badge {
+	margin-left: 5px;
+}
+
+.offers .entry {
+	background-color: #e74c3c;
+	text-align: left;
+	left: 2px;
+}
