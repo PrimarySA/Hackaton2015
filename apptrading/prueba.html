@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+
+		<title>TradingView Charting Library demo</title>
+
+		<!-- Fix for iOS Safari zooming bug -->
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	</head>
+
+	<body id="aa"  style="margin:0px;">
+<button onclick="myFunction()">Click me</button>
+
+<button onclick="myFunction1()">Click ssssme</button>
+		<div id="tv_chart_container"></div>
+	</body>
+
+	
+		<script type="text/javascript">
+
+	
+  function myFunction() {
+ 			
+$.ajax({
+ url: "http://104.131.109.227/apptrading/api.php?callback=?&url=http://demo-api.primary.com.ar:8081/pbcp/rest/instruments/all",
+ jsonp: "callback",
+ dataType: "jsonp"
+ })
+ .done(function( data ) {
+  if (data.error==0){
+    var obj = jQuery.parseJSON( data.respuesta);
+    console.log(obj);
+  }
+  
+ })
+ 
+ }
+		
+	
+
+
+		</script>
+
+	
+		
+</html>

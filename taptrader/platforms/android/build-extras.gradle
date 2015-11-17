@@ -1,0 +1,19 @@
+android {
+     lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    signingConfigs {
+         release {
+                keyAlias = "johnS"
+                keyPassword = "123Momia!" // And these must be set to non-empty in order to have the signing step added to the task graph.
+                storeFile = file("bartatech.keystore")
+                storePassword = "123Momia!"
+            }
+        }
+        buildTypes {
+            release {
+                signingConfig signingConfigs.release
+            }
+        }
+}

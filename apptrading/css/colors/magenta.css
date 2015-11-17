@@ -1,0 +1,131 @@
+/*==============================================
+[Magenta color stylesheet magenta.css]
+
+Author:	SINDEVO.COM - Smart Internet Development
+Template:	Mobix - Mobile Web APP Template
+================================================*/
+
+/*===============================================*/
+/* MAIN COLOR */
+/*===============================================*/	
+a, blockquote span {
+color: lightskyblue;
+}
+a.button_full, a.button_small, .call_button a{
+background-color:lightskyblue; 
+}
+.colorticker{
+color: lightskyblue;
+
+}
+.button {
+border: 1px solid lightskyblue;
+color: lightskyblue;
+}
+.button.active {
+background: lightskyblue;
+}
+#pages_maincontent h3{
+color:lightskyblue;
+}
+.photo-categories a.active{
+background-color:lightskyblue;
+}
+.post_date{
+color:lightskyblue;
+}
+.list-block .swipeout-actions-left a,
+.list-block .swipeout-actions-right a {
+background: lightskyblue;
+}
+.contactform input.form_submit, .loginform input.form_submit, .commentform input.form_submit{ 
+background-color:lightskyblue;
+}
+ul.responsive_table li:first-child{
+background-color:lightskyblue;
+color:#FFFFFF; /* blanco*/
+}
+li.table_row{
+background-color:#e6e6e6; /*gris*/
+}
+.blog_nav a{
+background-color:lightskyblue;
+}
+/*===============================================*/
+/* HOME BG AND PAGES HEADER BG */
+/*===============================================*/	
+.homepage{
+background: url(../../images/colors/magenta/bg.jpg) no-repeat center center;
+background-attachment:fixed;
+-webkit-background-size: 100%; 
+-moz-background-size: 100%;
+-o-background-size: 100%;
+background-size: 100%;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover; 
+background-size: cover;
+}
+.navbarpages{
+background:#3AA6E6;
+/*background:url(../../images/colors/magenta/header.jpg) no-repeat center center;*/
+
+}
+/*===============================================*/
+/* MAIN NAV LINKS */
+/*===============================================*/	
+.main-nav ul li{
+background: white;
+}
+.main-nav ul li a{
+color:#3AA6E6;
+} 
+
+.divmenu{
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 2px;
+    padding-top: 20%;
+    padding-bottom: 20%;
+
+}
+/*===============================================*/
+/* POPUPS AND TOOLBAR */
+/*===============================================*/	
+.popup, .page_content_menu{
+background: white;
+}
+.listyle{
+width:27% !important;
+border-color: lightskyblue;
+border-style: solid;
+border-width: 2px;
+border-right: 2px lightskyblue solid;
+padding-top: 5px !important; 
+padding-bottom: 5px !important;
+
+}
+.popup-login, .popup-signup, .popup-forgot{
+background-color:#3AA6E6;
+}
+.toolbar:before {
+  background-color: #3AA6E6;
+}
+/*===============================================*/
+/* LEFT AND RIGHT SLIDE PANEL */
+/*===============================================*/	
+.panel {
+background:#3AA6E6;
+}
+.user-nav ul li, ul.popular_posts li{
+border-bottom:1px #B6E3FD solid;
+}
+/* MENU OPENER ICON */
+ul.toolbar_icons li.menuicon{
+background-color:#3AA6E6;
+}
+
+/* PANEL CLOSE BUTTON */
+.close_popup_button a{
+background-color:#3AA6E6;
+}

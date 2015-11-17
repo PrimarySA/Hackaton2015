@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="msapplication-tap-highlight" content="no">
+<meta name="viewport"
+	content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<style type="text/css">
+</style>
+<title>TapTrader</title>
+</head>
+
+<body>
+	<nav id="topnavbar" class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#main-navbar">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href=""><span class="glyphicon glyphicon-hand-right"></span>&nbsp;TapTrader</a>
+			</div>
+			<div class="collapse navbar-collapse" id="main-navbar">
+				<ul class="nav navbar-nav">
+					<li><a href="cuenta" title="Cuenta">Cuenta</a></li>
+					<li><a href="opciones" title="Opciones">Opciones</a></li>
+					<li><a onclick="exitFromApp();" title="Salir">Salir</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container-fluid">
+		<div id="login" class="page">
+			<h2>&nbsp;<span class="glyphicon glyphicon-hand-right"></span>&nbsp;TapTrader</h2>
+			<hr>
+			<form>
+				<div class="form-group">
+					<input type="text" class="form-control" id="inputuser"
+						placeholder="Usuario">
+				</div>
+				<div class="form-group">
+					<input type="password" class="form-control" id="inputpassword"
+						placeholder="Clave">
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" id="inputaccount"
+						placeholder="Cuenta">
+				</div>
+				<button id="buttonlogin" type="button"
+					class="btn btn-primary btn-block">Ingresar</button>
+			</form>
+		</div>
+		<div id="quotes" class="page quotes">
+			<div id="q_row-XXX" class="quote row template" data-symbol="XXX">
+				<div class="row quotewrapper">
+					<div class="col-xs-5 col-sm-5 symbol"></div>
+					<div class="col-xs-2 col-sm-2 last"></div>
+					<div class="col-xs-2 ">
+						<span class="spark"></span>
+					</div>
+					<div class="col-xs-2 col-sm-2 change"></div>
+
+				</div>
+			</div>
+		</div>
+		<div id="muaker" class="page">
+			<div class="row">
+				<div class="col-xs-6">
+					<span class="symbol"></span>
+				</div>
+				<div class="col-xs-4">
+					<span class="last_price"></span>
+				</div>
+				<div class="col-xs-2">
+					<span class="change "></span>
+				</div>
+				<div class="col-xs-4 col-sm-7">
+					<div class="chart" id="chart"></div>
+				</div>
+				<div class="muaker-quote col-xs-5 col-sm-3">
+					<div class="muaker-ask" title="Offer">
+						<span class="badge pull-right ksize">0</span> <span
+							title="Comprar"
+							class="glyphicon glyphicon-send killer pull-right"></span> <span
+							class="badge msize pull-right">0</span> <span class="price">0</span>
+					</div>
+					<div class="muaker-bid" title="Bid">
+						<span class="badge pull-right ksize">0</span> <span title="Vender"
+							class="glyphicon glyphicon-send killer pull-right"></span> <span
+							class="badge msize pull-right">0</span> <span class="price">0</span>
+					</div>
+				</div>
+				<div class="muaker-orders col-xs-3 col-sm-2">
+					<div class="muaker-position"></div>
+					<div class="muaker-slide muaker-myask" title="Mi Offer">
+						<span class="price">0</span> <span
+							class="glyphicon glyphicon-remove-circle cancel"></span> <span
+							class="badge pull-right msize">1</span>
+					</div>
+					<div class="muaker-slide muaker-mybid" title="Mi Bid">
+						<span class="price">0</span><span
+							class="glyphicon glyphicon-remove-circle cancel"></span><span
+							class="badge pull-right msize">1</span>
+					</div>
+				</div>
+			</div>
+			<hr/>
+			<button class="btn btn-primary btn-block" onclick="genQuote();">Test
+				quote</button>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="cordova.js"></script>
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/jquery.ui.touch-punch.min.js"></script>
+
+	<script type="text/javascript" src="js/datamodel.js"></script>
+	<script type="text/javascript" src="js/quotes.js"></script>
+	<script type="text/javascript" src="js/ttchart.js"></script>
+	<script type="text/javascript" src="js/muaktrader.js"></script>
+	<script type="text/javascript" src="js/highstock.js"></script>
+	<script type="text/javascript" src="js/taptrader.js"></script>
+</body>
+</html>

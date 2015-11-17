@@ -1,0 +1,275 @@
+// Initialize your app
+var myApp = new Framework7({
+    animateNavBackIcon: true,
+    // Enable templates auto precompilation
+    precompileTemplates: true,
+    // Enabled pages rendering using Template7
+	swipeBackPage: false,
+	swipeBackPageThreshold: 1,
+	swipePanel: "left",
+	swipePanelCloseOpposite: true,
+	pushState: true,
+	pushStateRoot: undefined,
+	pushStateNoAnimation: false,
+	pushStateSeparator: '#!/',
+    template7Pages: true
+});
+
+	var chart1 
+// Export selectors engine
+var $$ = Dom7;
+
+// Add main View
+var mainView = myApp.addView('.view-main', {
+    // Enable dynamic Navbar
+    dynamicNavbar: false
+});
+
+$$(document).on('ajaxStart',function(e){myApp.showIndicator();});
+$$(document).on('ajaxComplete',function(){myApp.hideIndicator();});																																																																		
+
+
+
+$$(document).on('pageInit', function (e) {
+	 var chartprincipal;
+	 
+ var page = e.detail.page;
+ if (page.url=="noticias.html")
+ {
+ 
+$.ajax({
+  url      : document.location.protocol + '//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=' + encodeURIComponent('http://ambito.com/rss/noticias.asp?s=Econom%EDa'),
+  dataType : 'json',
+  success  : function (data) {
+  $('.posts').html('');
+  
+    if (data.responseData.feed && data.responseData.feed.entries) {
+      $.each(data.responseData.feed.entries, function (i, e) {
+	
+var feedd;
+	  var dt = new Date(e.publishedDate);
+	  var mes, mesnombre;
+	  mes = dt.getMonth() ;
+	  var monthNames = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
+  "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
+];
+	  
+	  
+	feedd = '<li> <div class="post_entry"> <div class="post_date"><span class="day">'+dt.getDate()  + '</span><br><span class="month">' +  monthNames[mes]  + '</span></div> <div class="post_title">';
+	
+           feedd =feedd + '<h2><a href="blog-single.html">' +  e.title + '</a></h2></div></div></li>';
+		    console.log($('.post'));
+			
+				
+	  $('.posts').append(feedd);
+	  console.log(e);
+	
+	  
+console.log(dt.getFullYear() + '/' + (dt.getMonth() + 1) + '/' + dt.getDate());
+
+        console.log("------------------------");
+        console.log("title      : " + e.title);
+        console.log("author     : " + e.author);
+        console.log("description: " + e.description);
+      });
+    }
+  }
+});
+ 
+} 
+ 
+ if (page.url=="chart.html")
+ {
+ 
+ 
+ $.getJSON('http://www.highcharts.com/samples/data/jsonp.php?filename=aapl-c.json&callback=?', function(data) {
+    $(function() {
+        $('#chart').highcharts('StockChart', {
+
+            title : {
+                text : 'MACD of AAPL stock price'
+            },
+
+            subtitle: {
+                text: 'From may 15, 2006 to May 10, 2013'
+            },
+            
+            yAxis: [{
+                title: {
+                    text: 'Price'
+                },
+                height: 200,
+                plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+            }, {
+                title: {
+                    text: 'MACD'
+                },
+                top: 300,
+                height: 100,
+                offset: 0,
+                lineWidth: 2
+            }],
+            
+            tooltip: {
+                crosshairs: true,
+                shared: true
+            },
+            
+            rangeSelector : {
+                selected : 1
+            },
+
+            legend: {
+                enabled: true,
+                layout: 'vertical',
+                align: 'right',
+                verticalAlign: 'middle',
+                borderWidth: 0
+            },
+
+            plotOptions: {
+                series: {
+                    marker: {
+                        enabled: false,
+                    }
+                }
+            },
+            
+            series : [{
+                name: 'AAPL Stock Price',
+                type : 'line',
+                id: 'primary',
+                data : data
+            }, {
+                name : 'MACD',
+                linkedTo: 'primary',
+                yAxis: 1,
+                showInLegend: true,
+                type: 'trendline',
+                algorithm: 'MACD'
+
+            }, {
+                name : 'Signal line',
+                linkedTo: 'primary',
+                yAxis: 1,
+                showInLegend: true,
+                type: 'trendline',
+                algorithm: 'signalLine'
+
+            }, {
+                name: 'Histogram',
+                linkedTo: 'primary',
+                yAxis: 1,
+                showInLegend: true,
+                type: 'histogram'
+
+            }]
+        });
+    });
+});
+	
+	
+	
+	$("#btnatr").click(function(e){
+	e.preventDefault();
+		
+			 chart1 =  $('#chart').highcharts();
+	
+chart1.series[1].hide();
+chart1.series[2].hide();
+chart1.series[3].hide();
+
+	
+	console.log(chart1);
+	/*
+	chart1.indicators.allItems[0].visible = false;
+	chart1.indicators.allItems[1].visible = false;
+	chart1.indicators.allItems[2].visible = false;
+	chart1.indicators.allItems[3].visible = false;*/
+	
+	console.log(chart1.indicators.allItems[0]);
+	
+});
+
+
+ /*
+ 
+ 
+ 
+  $.getJSON('http://www.highcharts.com/samples/data/jsonp.php?filename=aapl-ohlc.json&callback=?', function (data) {
+
+        // create the chart
+        $('#container').highcharts('StockChart', {
+
+ xAxis: {
+                type: 'datetime'
+            },
+            rangeSelector : {
+                selected : 2
+            },
+ plotOptions: {
+                series: {
+                    marker: {
+                        enabled: false,
+                    }
+                }
+            },
+            title : {
+                text : 'DoMar16',
+				  style: {
+                color: '#87CEFA',
+                fontWeight: 'bold'
+            }
+            },
+
+            series : [{
+                type : 'line',
+                name : 'DoMar16',
+                data : data,
+				id: 'primary',
+                dataGrouping : {
+                    units : [[
+                        'week', // unit name
+                        [1] // allowed multiples
+                    ], [
+                        'month',
+                        [1, 2, 3, 4, 6]
+                    ]]
+                }
+            }, {
+                name: '15-day EMA',
+                linkedTo: 'primary',
+                showInLegend: true,
+                type: 'trendline',
+                algorithm: 'EMA',
+                periods: 15
+            }, {
+                name: '40-day EMA',
+                linkedTo: 'primary',
+                showInLegend: true,
+                type: 'trendline',
+                algorithm: 'EMA',
+                periods: 40
+            }]
+        });
+    });
+	
+	console.log("fin del char3");
+ 
+ 
+ */
+ }
+	    
+
+	
+	});	
+	
+	document.addEventListener('touchmove', function(event) {
+	   if(event.target.parentNode.className.indexOf('navbarpages') != -1 || event.target.className.indexOf('navbarpages') != -1 ) {
+		event.preventDefault(); }
+	}, false);
+	

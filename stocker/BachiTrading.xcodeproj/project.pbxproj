@@ -1,0 +1,753 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A73D4CFADBDBD2CE69E2C89 /* libPods-BachiTrading.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B76CD4A5843BA011464DF964 /* libPods-BachiTrading.a */; };
+		EBB01EDE1BF8895C00A3E63C /* Instruments+DataGetters.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB01EDD1BF8895C00A3E63C /* Instruments+DataGetters.swift */; };
+		EBB01EE01BF8A48200A3E63C /* OrdersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBB01EDF1BF8A48200A3E63C /* OrdersViewController.xib */; };
+		EBB01EE21BF8A49000A3E63C /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB01EE11BF8A49000A3E63C /* OrdersViewController.swift */; };
+		EBB01EE41BF8A59C00A3E63C /* Styler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB01EE31BF8A59C00A3E63C /* Styler.swift */; };
+		EBB01EE71BF8B3EF00A3E63C /* MiscUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB01EE61BF8B3EF00A3E63C /* MiscUtils.m */; };
+		EBB01EEA1BF915BF00A3E63C /* ListOfOrdersResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB01EE91BF915BF00A3E63C /* ListOfOrdersResponse.m */; };
+		EBD67A281BF7D75200BF3C5B /* DateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD67A271BF7D75200BF3C5B /* DateUtils.m */; };
+		EBD67A2B1BF801D900BF3C5B /* InstrumentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBD67A2A1BF801D900BF3C5B /* InstrumentCell.xib */; };
+		EBD67A301BF805A800BF3C5B /* MarketDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBD67A2F1BF805A800BF3C5B /* MarketDataViewController.xib */; };
+		EBD67A381BF80E2E00BF3C5B /* MarketDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD67A371BF80E2E00BF3C5B /* MarketDataViewController.swift */; };
+		EBD67A3A1BF8134800BF3C5B /* InstrumentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD67A391BF8134800BF3C5B /* InstrumentCell.swift */; };
+		EBD67A3C1BF8142700BF3C5B /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD67A3B1BF8142700BF3C5B /* GraphView.swift */; };
+		EBD67A3E1BF8189F00BF3C5B /* InstrumentDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD67A3D1BF8189F00BF3C5B /* InstrumentDataViewController.swift */; };
+		EBD67A401BF818B700BF3C5B /* InstrumentDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBD67A3F1BF818B700BF3C5B /* InstrumentDataViewController.xib */; };
+		EBD67A421BF81A8400BF3C5B /* MakeOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD67A411BF81A8400BF3C5B /* MakeOrderViewController.swift */; };
+		EBD67A441BF81AA800BF3C5B /* MakeOrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBD67A431BF81AA800BF3C5B /* MakeOrderViewController.xib */; };
+		EBD67A461BF82B9700BF3C5B /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD67A451BF82B9700BF3C5B /* OrderCell.swift */; };
+		EBD67A481BF82BB800BF3C5B /* OrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBD67A471BF82BB800BF3C5B /* OrderCell.xib */; };
+		EBD67A4A1BF82C5600BF3C5B /* Inspectables.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD67A491BF82C5600BF3C5B /* Inspectables.swift */; };
+		EBF852951BF7800000E39D2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF852941BF7800000E39D2A /* main.m */; };
+		EBF852981BF7800000E39D2A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF852971BF7800000E39D2A /* AppDelegate.m */; };
+		EBF8529E1BF7800000E39D2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBF8529C1BF7800000E39D2A /* Main.storyboard */; };
+		EBF852A31BF7800000E39D2A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBF852A11BF7800000E39D2A /* LaunchScreen.xib */; };
+		EBF852AF1BF7800100E39D2A /* BachiTradingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF852AE1BF7800100E39D2A /* BachiTradingTests.m */; };
+		EBF852C01BF7864C00E39D2A /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF852BF1BF7864C00E39D2A /* Order.m */; };
+		EBF852C61BF786BB00E39D2A /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF852C51BF786BB00E39D2A /* Model.m */; };
+		EBF852CC1BF788B800E39D2A /* Instrument.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF852CB1BF788B800E39D2A /* Instrument.m */; };
+		EBF852D11BF78D2900E39D2A /* BaseStore.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF852D01BF78D2900E39D2A /* BaseStore.m */; };
+		EBF852D41BF7923B00E39D2A /* HistoricalDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF852D31BF7923B00E39D2A /* HistoricalDataStore.m */; };
+		EBF852D71BF792EE00E39D2A /* MarketDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF852D61BF792EE00E39D2A /* MarketDataStore.m */; };
+		EBF852DC1BF7B5DA00E39D2A /* InstrumentsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF852DB1BF7B5DA00E39D2A /* InstrumentsResponse.m */; };
+		EBF852E91BF7BEDF00E39D2A /* OrderStore.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF852E81BF7BEDF00E39D2A /* OrderStore.m */; };
+		EBF852EC1BF7BFD300E39D2A /* Response.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF852EB1BF7BFD300E39D2A /* Response.m */; };
+		EBF852EF1BF7C42900E39D2A /* OrderResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF852EE1BF7C42900E39D2A /* OrderResponse.m */; };
+		EBF852F51BF7CEEB00E39D2A /* Offer.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF852F41BF7CEEB00E39D2A /* Offer.m */; };
+		EBF852F81BF7CF7700E39D2A /* HistoricalOffer.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF852F71BF7CF7700E39D2A /* HistoricalOffer.m */; };
+		EBF852FB1BF7D07D00E39D2A /* MarketDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF852FA1BF7D07D00E39D2A /* MarketDataResponse.m */; };
+		EBF852FE1BF7D0C500E39D2A /* MarketData.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF852FD1BF7D0C500E39D2A /* MarketData.m */; };
+		EBF853011BF7D18000E39D2A /* HistoricalMarketDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF853001BF7D18000E39D2A /* HistoricalMarketDataResponse.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EBF852A91BF7800100E39D2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBF852871BF7800000E39D2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBF8528E1BF7800000E39D2A;
+			remoteInfo = BachiTrading;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		319097A571675C42E88AD03E /* Pods-BachiTrading.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BachiTrading.release.xcconfig"; path = "Pods/Target Support Files/Pods-BachiTrading/Pods-BachiTrading.release.xcconfig"; sourceTree = "<group>"; };
+		3467F5369791E9334ACA51DF /* Pods-BachiTrading.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BachiTrading.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BachiTrading/Pods-BachiTrading.debug.xcconfig"; sourceTree = "<group>"; };
+		B76CD4A5843BA011464DF964 /* libPods-BachiTrading.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BachiTrading.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBB01EDD1BF8895C00A3E63C /* Instruments+DataGetters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Instruments+DataGetters.swift"; sourceTree = "<group>"; };
+		EBB01EDF1BF8A48200A3E63C /* OrdersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrdersViewController.xib; sourceTree = "<group>"; };
+		EBB01EE11BF8A49000A3E63C /* OrdersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
+		EBB01EE31BF8A59C00A3E63C /* Styler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Styler.swift; sourceTree = "<group>"; };
+		EBB01EE51BF8B3EF00A3E63C /* MiscUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiscUtils.h; sourceTree = "<group>"; };
+		EBB01EE61BF8B3EF00A3E63C /* MiscUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiscUtils.m; sourceTree = "<group>"; };
+		EBB01EE81BF915BF00A3E63C /* ListOfOrdersResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListOfOrdersResponse.h; sourceTree = "<group>"; };
+		EBB01EE91BF915BF00A3E63C /* ListOfOrdersResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListOfOrdersResponse.m; sourceTree = "<group>"; };
+		EBD67A261BF7D75200BF3C5B /* DateUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateUtils.h; sourceTree = "<group>"; };
+		EBD67A271BF7D75200BF3C5B /* DateUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateUtils.m; sourceTree = "<group>"; };
+		EBD67A2A1BF801D900BF3C5B /* InstrumentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InstrumentCell.xib; sourceTree = "<group>"; };
+		EBD67A2F1BF805A800BF3C5B /* MarketDataViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarketDataViewController.xib; sourceTree = "<group>"; };
+		EBD67A311BF806DA00BF3C5B /* BachiTrading-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BachiTrading-Bridging-Header.h"; sourceTree = "<group>"; };
+		EBD67A371BF80E2E00BF3C5B /* MarketDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketDataViewController.swift; sourceTree = "<group>"; };
+		EBD67A391BF8134800BF3C5B /* InstrumentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstrumentCell.swift; sourceTree = "<group>"; };
+		EBD67A3B1BF8142700BF3C5B /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		EBD67A3D1BF8189F00BF3C5B /* InstrumentDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstrumentDataViewController.swift; sourceTree = "<group>"; };
+		EBD67A3F1BF818B700BF3C5B /* InstrumentDataViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InstrumentDataViewController.xib; sourceTree = "<group>"; };
+		EBD67A411BF81A8400BF3C5B /* MakeOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakeOrderViewController.swift; sourceTree = "<group>"; };
+		EBD67A431BF81AA800BF3C5B /* MakeOrderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MakeOrderViewController.xib; sourceTree = "<group>"; };
+		EBD67A451BF82B9700BF3C5B /* OrderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
+		EBD67A471BF82BB800BF3C5B /* OrderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderCell.xib; sourceTree = "<group>"; };
+		EBD67A491BF82C5600BF3C5B /* Inspectables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Inspectables.swift; sourceTree = "<group>"; };
+		EBF8528F1BF7800000E39D2A /* BachiTrading.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BachiTrading.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBF852931BF7800000E39D2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBF852941BF7800000E39D2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EBF852961BF7800000E39D2A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EBF852971BF7800000E39D2A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EBF8529D1BF7800000E39D2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EBF852A21BF7800000E39D2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		EBF852A81BF7800100E39D2A /* BachiTradingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BachiTradingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBF852AD1BF7800100E39D2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBF852AE1BF7800100E39D2A /* BachiTradingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BachiTradingTests.m; sourceTree = "<group>"; };
+		EBF852BE1BF7864C00E39D2A /* Order.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Order.h; sourceTree = "<group>"; };
+		EBF852BF1BF7864C00E39D2A /* Order.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Order.m; sourceTree = "<group>"; };
+		EBF852C41BF786BB00E39D2A /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		EBF852C51BF786BB00E39D2A /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		EBF852CA1BF788B800E39D2A /* Instrument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Instrument.h; sourceTree = "<group>"; };
+		EBF852CB1BF788B800E39D2A /* Instrument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Instrument.m; sourceTree = "<group>"; };
+		EBF852CD1BF78A9800E39D2A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EBF852CF1BF78D2900E39D2A /* BaseStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseStore.h; sourceTree = "<group>"; };
+		EBF852D01BF78D2900E39D2A /* BaseStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseStore.m; sourceTree = "<group>"; };
+		EBF852D21BF7923B00E39D2A /* HistoricalDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoricalDataStore.h; sourceTree = "<group>"; };
+		EBF852D31BF7923B00E39D2A /* HistoricalDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoricalDataStore.m; sourceTree = "<group>"; };
+		EBF852D51BF792EE00E39D2A /* MarketDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarketDataStore.h; sourceTree = "<group>"; };
+		EBF852D61BF792EE00E39D2A /* MarketDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarketDataStore.m; sourceTree = "<group>"; };
+		EBF852DA1BF7B5DA00E39D2A /* InstrumentsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstrumentsResponse.h; sourceTree = "<group>"; };
+		EBF852DB1BF7B5DA00E39D2A /* InstrumentsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstrumentsResponse.m; sourceTree = "<group>"; };
+		EBF852E71BF7BEDF00E39D2A /* OrderStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderStore.h; sourceTree = "<group>"; };
+		EBF852E81BF7BEDF00E39D2A /* OrderStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderStore.m; sourceTree = "<group>"; };
+		EBF852EA1BF7BFD300E39D2A /* Response.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Response.h; sourceTree = "<group>"; };
+		EBF852EB1BF7BFD300E39D2A /* Response.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Response.m; sourceTree = "<group>"; };
+		EBF852ED1BF7C42900E39D2A /* OrderResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderResponse.h; sourceTree = "<group>"; };
+		EBF852EE1BF7C42900E39D2A /* OrderResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderResponse.m; sourceTree = "<group>"; };
+		EBF852F31BF7CEEB00E39D2A /* Offer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Offer.h; sourceTree = "<group>"; };
+		EBF852F41BF7CEEB00E39D2A /* Offer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Offer.m; sourceTree = "<group>"; };
+		EBF852F61BF7CF7700E39D2A /* HistoricalOffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoricalOffer.h; sourceTree = "<group>"; };
+		EBF852F71BF7CF7700E39D2A /* HistoricalOffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoricalOffer.m; sourceTree = "<group>"; };
+		EBF852F91BF7D07D00E39D2A /* MarketDataResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarketDataResponse.h; sourceTree = "<group>"; };
+		EBF852FA1BF7D07D00E39D2A /* MarketDataResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarketDataResponse.m; sourceTree = "<group>"; };
+		EBF852FC1BF7D0C500E39D2A /* MarketData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarketData.h; sourceTree = "<group>"; };
+		EBF852FD1BF7D0C500E39D2A /* MarketData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarketData.m; sourceTree = "<group>"; };
+		EBF852FF1BF7D18000E39D2A /* HistoricalMarketDataResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoricalMarketDataResponse.h; sourceTree = "<group>"; };
+		EBF853001BF7D18000E39D2A /* HistoricalMarketDataResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoricalMarketDataResponse.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBF8528C1BF7800000E39D2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A73D4CFADBDBD2CE69E2C89 /* libPods-BachiTrading.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBF852A51BF7800100E39D2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BDDFAB9F58E672DAF831244 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBF852CD1BF78A9800E39D2A /* CoreGraphics.framework */,
+				B76CD4A5843BA011464DF964 /* libPods-BachiTrading.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EBB01EDC1BF8893700A3E63C /* Model Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EBB01EDD1BF8895C00A3E63C /* Instruments+DataGetters.swift */,
+			);
+			name = "Model Extensions";
+			sourceTree = "<group>";
+		};
+		EBD67A251BF7D72200BF3C5B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EBD67A261BF7D75200BF3C5B /* DateUtils.h */,
+				EBD67A271BF7D75200BF3C5B /* DateUtils.m */,
+				EBB01EE51BF8B3EF00A3E63C /* MiscUtils.h */,
+				EBB01EE61BF8B3EF00A3E63C /* MiscUtils.m */,
+				EBD67A491BF82C5600BF3C5B /* Inspectables.swift */,
+				EBB01EE31BF8A59C00A3E63C /* Styler.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		EBD67A291BF801B500BF3C5B /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+				EBD67A2A1BF801D900BF3C5B /* InstrumentCell.xib */,
+				EBD67A471BF82BB800BF3C5B /* OrderCell.xib */,
+				EBD67A2F1BF805A800BF3C5B /* MarketDataViewController.xib */,
+				EBD67A3F1BF818B700BF3C5B /* InstrumentDataViewController.xib */,
+				EBD67A431BF81AA800BF3C5B /* MakeOrderViewController.xib */,
+				EBB01EDF1BF8A48200A3E63C /* OrdersViewController.xib */,
+			);
+			name = xibs;
+			sourceTree = "<group>";
+		};
+		EBF852861BF7800000E39D2A = {
+			isa = PBXGroup;
+			children = (
+				EBF852911BF7800000E39D2A /* BachiTrading */,
+				EBF852AB1BF7800100E39D2A /* BachiTradingTests */,
+				EBF852901BF7800000E39D2A /* Products */,
+				F1A10C95F42995496780143E /* Pods */,
+				0BDDFAB9F58E672DAF831244 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EBF852901BF7800000E39D2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBF8528F1BF7800000E39D2A /* BachiTrading.app */,
+				EBF852A81BF7800100E39D2A /* BachiTradingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBF852911BF7800000E39D2A /* BachiTrading */ = {
+			isa = PBXGroup;
+			children = (
+				EBF852961BF7800000E39D2A /* AppDelegate.h */,
+				EBF852971BF7800000E39D2A /* AppDelegate.m */,
+				EBF852C71BF7877700E39D2A /* Model */,
+				EBF852C81BF7878000E39D2A /* Store */,
+				EBF852C91BF7878F00E39D2A /* View Controllers */,
+				EBF852D81BF7B15000E39D2A /* Views */,
+				EBD67A291BF801B500BF3C5B /* xibs */,
+				EBD67A251BF7D72200BF3C5B /* Utils */,
+				EBF8529C1BF7800000E39D2A /* Main.storyboard */,
+				EBF852A11BF7800000E39D2A /* LaunchScreen.xib */,
+				EBD67A311BF806DA00BF3C5B /* BachiTrading-Bridging-Header.h */,
+				EBF852921BF7800000E39D2A /* Supporting Files */,
+			);
+			path = BachiTrading;
+			sourceTree = "<group>";
+		};
+		EBF852921BF7800000E39D2A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EBF852931BF7800000E39D2A /* Info.plist */,
+				EBF852941BF7800000E39D2A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EBF852AB1BF7800100E39D2A /* BachiTradingTests */ = {
+			isa = PBXGroup;
+			children = (
+				EBF852AE1BF7800100E39D2A /* BachiTradingTests.m */,
+				EBF852AC1BF7800100E39D2A /* Supporting Files */,
+			);
+			path = BachiTradingTests;
+			sourceTree = "<group>";
+		};
+		EBF852AC1BF7800100E39D2A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EBF852AD1BF7800100E39D2A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EBF852C71BF7877700E39D2A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EBF852D91BF7B59300E39D2A /* Responses */,
+				EBB01EDC1BF8893700A3E63C /* Model Extensions */,
+				EBF852C41BF786BB00E39D2A /* Model.h */,
+				EBF852C51BF786BB00E39D2A /* Model.m */,
+				EBF852CA1BF788B800E39D2A /* Instrument.h */,
+				EBF852CB1BF788B800E39D2A /* Instrument.m */,
+				EBF852BE1BF7864C00E39D2A /* Order.h */,
+				EBF852BF1BF7864C00E39D2A /* Order.m */,
+				EBF852F31BF7CEEB00E39D2A /* Offer.h */,
+				EBF852F41BF7CEEB00E39D2A /* Offer.m */,
+				EBF852F61BF7CF7700E39D2A /* HistoricalOffer.h */,
+				EBF852F71BF7CF7700E39D2A /* HistoricalOffer.m */,
+				EBF852FC1BF7D0C500E39D2A /* MarketData.h */,
+				EBF852FD1BF7D0C500E39D2A /* MarketData.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EBF852C81BF7878000E39D2A /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				EBF852CF1BF78D2900E39D2A /* BaseStore.h */,
+				EBF852D01BF78D2900E39D2A /* BaseStore.m */,
+				EBF852D21BF7923B00E39D2A /* HistoricalDataStore.h */,
+				EBF852D31BF7923B00E39D2A /* HistoricalDataStore.m */,
+				EBF852D51BF792EE00E39D2A /* MarketDataStore.h */,
+				EBF852D61BF792EE00E39D2A /* MarketDataStore.m */,
+				EBF852E71BF7BEDF00E39D2A /* OrderStore.h */,
+				EBF852E81BF7BEDF00E39D2A /* OrderStore.m */,
+			);
+			name = Store;
+			sourceTree = "<group>";
+		};
+		EBF852C91BF7878F00E39D2A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EBD67A371BF80E2E00BF3C5B /* MarketDataViewController.swift */,
+				EBD67A3D1BF8189F00BF3C5B /* InstrumentDataViewController.swift */,
+				EBD67A411BF81A8400BF3C5B /* MakeOrderViewController.swift */,
+				EBB01EE11BF8A49000A3E63C /* OrdersViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		EBF852D81BF7B15000E39D2A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EBF852E61BF7B8F800E39D2A /* Cells */,
+				EBD67A3B1BF8142700BF3C5B /* GraphView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		EBF852D91BF7B59300E39D2A /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				EBF852EA1BF7BFD300E39D2A /* Response.h */,
+				EBF852EB1BF7BFD300E39D2A /* Response.m */,
+				EBF852DA1BF7B5DA00E39D2A /* InstrumentsResponse.h */,
+				EBF852DB1BF7B5DA00E39D2A /* InstrumentsResponse.m */,
+				EBF852ED1BF7C42900E39D2A /* OrderResponse.h */,
+				EBF852EE1BF7C42900E39D2A /* OrderResponse.m */,
+				EBF852F91BF7D07D00E39D2A /* MarketDataResponse.h */,
+				EBF852FA1BF7D07D00E39D2A /* MarketDataResponse.m */,
+				EBF852FF1BF7D18000E39D2A /* HistoricalMarketDataResponse.h */,
+				EBF853001BF7D18000E39D2A /* HistoricalMarketDataResponse.m */,
+				EBB01EE81BF915BF00A3E63C /* ListOfOrdersResponse.h */,
+				EBB01EE91BF915BF00A3E63C /* ListOfOrdersResponse.m */,
+			);
+			name = Responses;
+			sourceTree = "<group>";
+		};
+		EBF852E61BF7B8F800E39D2A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EBD67A451BF82B9700BF3C5B /* OrderCell.swift */,
+				EBD67A391BF8134800BF3C5B /* InstrumentCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		F1A10C95F42995496780143E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3467F5369791E9334ACA51DF /* Pods-BachiTrading.debug.xcconfig */,
+				319097A571675C42E88AD03E /* Pods-BachiTrading.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBF8528E1BF7800000E39D2A /* BachiTrading */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBF852B21BF7800100E39D2A /* Build configuration list for PBXNativeTarget "BachiTrading" */;
+			buildPhases = (
+				E2BD6D31D48911E236B47B07 /* Check Pods Manifest.lock */,
+				EBF8528B1BF7800000E39D2A /* Sources */,
+				EBF8528C1BF7800000E39D2A /* Frameworks */,
+				EBF8528D1BF7800000E39D2A /* Resources */,
+				2B8BAA93EDF4E971F5E2209B /* Embed Pods Frameworks */,
+				C4DA005D783CB07CC8E81025 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BachiTrading;
+			productName = BachiTrading;
+			productReference = EBF8528F1BF7800000E39D2A /* BachiTrading.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EBF852A71BF7800100E39D2A /* BachiTradingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBF852B51BF7800100E39D2A /* Build configuration list for PBXNativeTarget "BachiTradingTests" */;
+			buildPhases = (
+				EBF852A41BF7800100E39D2A /* Sources */,
+				EBF852A51BF7800100E39D2A /* Frameworks */,
+				EBF852A61BF7800100E39D2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBF852AA1BF7800100E39D2A /* PBXTargetDependency */,
+			);
+			name = BachiTradingTests;
+			productName = BachiTradingTests;
+			productReference = EBF852A81BF7800100E39D2A /* BachiTradingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBF852871BF7800000E39D2A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Emiliano Bivachi";
+				TargetAttributes = {
+					EBF8528E1BF7800000E39D2A = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					EBF852A71BF7800100E39D2A = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = EBF8528E1BF7800000E39D2A;
+					};
+				};
+			};
+			buildConfigurationList = EBF8528A1BF7800000E39D2A /* Build configuration list for PBXProject "BachiTrading" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBF852861BF7800000E39D2A;
+			productRefGroup = EBF852901BF7800000E39D2A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBF8528E1BF7800000E39D2A /* BachiTrading */,
+				EBF852A71BF7800100E39D2A /* BachiTradingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBF8528D1BF7800000E39D2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBD67A2B1BF801D900BF3C5B /* InstrumentCell.xib in Resources */,
+				EBB01EE01BF8A48200A3E63C /* OrdersViewController.xib in Resources */,
+				EBF8529E1BF7800000E39D2A /* Main.storyboard in Resources */,
+				EBD67A481BF82BB800BF3C5B /* OrderCell.xib in Resources */,
+				EBD67A301BF805A800BF3C5B /* MarketDataViewController.xib in Resources */,
+				EBD67A441BF81AA800BF3C5B /* MakeOrderViewController.xib in Resources */,
+				EBF852A31BF7800000E39D2A /* LaunchScreen.xib in Resources */,
+				EBD67A401BF818B700BF3C5B /* InstrumentDataViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBF852A61BF7800100E39D2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B8BAA93EDF4E971F5E2209B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BachiTrading/Pods-BachiTrading-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4DA005D783CB07CC8E81025 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BachiTrading/Pods-BachiTrading-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2BD6D31D48911E236B47B07 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBF8528B1BF7800000E39D2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBD67A3A1BF8134800BF3C5B /* InstrumentCell.swift in Sources */,
+				EBF852FE1BF7D0C500E39D2A /* MarketData.m in Sources */,
+				EBF852D71BF792EE00E39D2A /* MarketDataStore.m in Sources */,
+				EBF852EC1BF7BFD300E39D2A /* Response.m in Sources */,
+				EBD67A281BF7D75200BF3C5B /* DateUtils.m in Sources */,
+				EBF852DC1BF7B5DA00E39D2A /* InstrumentsResponse.m in Sources */,
+				EBF852F51BF7CEEB00E39D2A /* Offer.m in Sources */,
+				EBF852CC1BF788B800E39D2A /* Instrument.m in Sources */,
+				EBD67A4A1BF82C5600BF3C5B /* Inspectables.swift in Sources */,
+				EBF853011BF7D18000E39D2A /* HistoricalMarketDataResponse.m in Sources */,
+				EBB01EEA1BF915BF00A3E63C /* ListOfOrdersResponse.m in Sources */,
+				EBB01EE41BF8A59C00A3E63C /* Styler.swift in Sources */,
+				EBF852EF1BF7C42900E39D2A /* OrderResponse.m in Sources */,
+				EBF852D41BF7923B00E39D2A /* HistoricalDataStore.m in Sources */,
+				EBD67A421BF81A8400BF3C5B /* MakeOrderViewController.swift in Sources */,
+				EBB01EDE1BF8895C00A3E63C /* Instruments+DataGetters.swift in Sources */,
+				EBF852C01BF7864C00E39D2A /* Order.m in Sources */,
+				EBB01EE71BF8B3EF00A3E63C /* MiscUtils.m in Sources */,
+				EBF852FB1BF7D07D00E39D2A /* MarketDataResponse.m in Sources */,
+				EBD67A3E1BF8189F00BF3C5B /* InstrumentDataViewController.swift in Sources */,
+				EBF852F81BF7CF7700E39D2A /* HistoricalOffer.m in Sources */,
+				EBF852E91BF7BEDF00E39D2A /* OrderStore.m in Sources */,
+				EBD67A3C1BF8142700BF3C5B /* GraphView.swift in Sources */,
+				EBF852981BF7800000E39D2A /* AppDelegate.m in Sources */,
+				EBF852C61BF786BB00E39D2A /* Model.m in Sources */,
+				EBB01EE21BF8A49000A3E63C /* OrdersViewController.swift in Sources */,
+				EBF852951BF7800000E39D2A /* main.m in Sources */,
+				EBF852D11BF78D2900E39D2A /* BaseStore.m in Sources */,
+				EBD67A461BF82B9700BF3C5B /* OrderCell.swift in Sources */,
+				EBD67A381BF80E2E00BF3C5B /* MarketDataViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBF852A41BF7800100E39D2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBF852AF1BF7800100E39D2A /* BachiTradingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EBF852AA1BF7800100E39D2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBF8528E1BF7800000E39D2A /* BachiTrading */;
+			targetProxy = EBF852A91BF7800100E39D2A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EBF8529C1BF7800000E39D2A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBF8529D1BF7800000E39D2A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EBF852A11BF7800000E39D2A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBF852A21BF7800000E39D2A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EBF852B01BF7800100E39D2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EBF852B11BF7800100E39D2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EBF852B31BF7800100E39D2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3467F5369791E9334ACA51DF /* Pods-BachiTrading.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = BachiTrading/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BachiTrading/BachiTrading-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EBF852B41BF7800100E39D2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 319097A571675C42E88AD03E /* Pods-BachiTrading.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = BachiTrading/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BachiTrading/BachiTrading-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		EBF852B61BF7800100E39D2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BachiTradingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BachiTrading.app/BachiTrading";
+			};
+			name = Debug;
+		};
+		EBF852B71BF7800100E39D2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BachiTradingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BachiTrading.app/BachiTrading";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBF8528A1BF7800000E39D2A /* Build configuration list for PBXProject "BachiTrading" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBF852B01BF7800100E39D2A /* Debug */,
+				EBF852B11BF7800100E39D2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBF852B21BF7800100E39D2A /* Build configuration list for PBXNativeTarget "BachiTrading" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBF852B31BF7800100E39D2A /* Debug */,
+				EBF852B41BF7800100E39D2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBF852B51BF7800100E39D2A /* Build configuration list for PBXNativeTarget "BachiTradingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBF852B61BF7800100E39D2A /* Debug */,
+				EBF852B71BF7800100E39D2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EBF852871BF7800000E39D2A /* Project object */;
+}
